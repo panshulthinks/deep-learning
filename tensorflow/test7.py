@@ -1,4 +1,5 @@
 #   LSTM AND SENTIMENT ANALYSIS
+import tensorflow as tf
 from keras.datasets import imdb
 from keras.preprocessing import sequence
 import keras
@@ -29,7 +30,7 @@ model.summary()
 
 # train the model
 model.compile(loss="binary_crossentropy",optimizer="adam",metrics=['acc'])
-history = model.fit(train_data, train_labels, epochs=10, validation_split=0.2)
+history = model.fit(train_data, train_labels, epochs=1, validation_split=0.2)
 
 results = model.evaluate(test_data, test_labels)
 print(results)
