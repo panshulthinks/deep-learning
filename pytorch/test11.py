@@ -73,30 +73,10 @@ l1_loss = nn.L1Loss() #L1 is known as mean absolute error
 optimizer = torch.optim.SGD(params=model_0.parameters(), lr=0.01) # Stochastic Gradient Descent 
 
 
-
-
 #track different values
 epoch_count = []
 train_loss_values = []
 test_loss_values = []
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 epochs = 100 #how many times to loop through the data

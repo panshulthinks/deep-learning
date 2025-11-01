@@ -50,15 +50,6 @@ print('Test accuracy:', test_acc)
 predictions = model.predict(test_images) # this will return a list of 10 numbers for each image
 
 
-
-
-
-
-
-
-
-
-
 # lets create a function to predict the image
 COLOR = 'white'
 plt.rcParams['text.color'] = COLOR
@@ -99,29 +90,3 @@ label = test_labels[num]
 predict(model, image, label)
 print("The expected label is " + class_names[label])
 print("The predicted label is " + class_names[np.argmax(predictions[num])])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

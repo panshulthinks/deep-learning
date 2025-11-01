@@ -102,13 +102,3 @@ def plot_prediction(train_data=X_train,
         
 plot_prediction(predictions=y_preds.cpu())
 
-
-
-
-
-
-
-
-
-
-
